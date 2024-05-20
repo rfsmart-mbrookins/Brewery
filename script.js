@@ -7,7 +7,7 @@ export async function searchBreweries() {
     resultsDiv.innerHTML = '';
 
     if (searchInput === '') {
-        resultsDiv.innerHTML = '<p>Enter search criteria to return brewery information.</p>';
+        resultsDiv.innerHTML = '<p>Brewery Search Criteria Can Not Be Blank</p>';
         return;
     }
 
@@ -16,7 +16,7 @@ export async function searchBreweries() {
         const breweries = await response.json();
 
         if (breweries.length === 0) {
-            resultsDiv.innerHTML = '<p>No breweries found.</p>';
+            resultsDiv.innerHTML = '<p>No breweries found. Please try again.</p>';
             return;
         }
 
