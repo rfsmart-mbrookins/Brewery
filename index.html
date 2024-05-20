@@ -19,7 +19,7 @@
         <option value="by_type">Brewery Type</option>
     </select>
 
-    <input type="text" id="searchInput" placeholder="Enter search term">
+    <input type="text" id="searchInput" placeholder="Brewery Search Criteria">
     <button id="searchButton">Search</button>
     <div id="results"></div>
 
@@ -29,9 +29,9 @@
         document.getElementById('searchButton').addEventListener('click', async () => {
             try {
                 await searchBreweries();
-                console.log('Search completed successfully');
+                console.log('Search Successful');
             } catch (error) {
-                console.error('Search failed:', error);
+                console.error('Search Failed:', error);
             }
         });
     </script>
