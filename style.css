@@ -12,7 +12,7 @@ body {
     background-color: #91ff00;
 }
 
-input[type="text" || id="searchCriteria"] {
+input[type="text"] {
     width: 60%;
     padding: 10px;
     margin-bottom: 10px;
